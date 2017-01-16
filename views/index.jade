@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h3 Welcome to Salmon Smash
+  ul
+    - for post in contentful.posts
+      li
+        h4
+          a(href='posts/'+post.urlKeyword+'.html')= post.title
+         
+      
